@@ -1,0 +1,23 @@
+:root{
+    /* color scheme */
+    --grey:#262524;
+    --l-grey:#a6a5a4;
+    --ll-grey:#f2f2f2;
+    --red:#d93e30;
+    --l-red:#bf3f3f;
+    /* reset spacing */
+    margin: 0;
+    padding: 0;
+   
+    
+}
+
+
+nav {
+    background-color:var(--l-grey);
+    border-bottom: solid 5px var(--l-red);
+}
+nav img {
+    height: 100px;
+    width: 100px;
+}
