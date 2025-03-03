@@ -7,11 +7,13 @@
     --l-red:#bf3f3f;
     /* reset spacing */
     margin: 0;
-    padding: 0;
-   
-    
+    padding: 0;  
 }
 
+body{
+    cursor: url('cursor.png'), auto;
+    height: 100dvh;
+}
 
 nav {
     background-color:var(--l-grey);
