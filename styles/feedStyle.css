@@ -1,0 +1,10 @@
+.feed-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin: 20px;
+}
+.left-aside, .right-asides{
+ min-width: 100px;
+ min-height: 400px;
+ border-radius: 0 0 0 0;
+}

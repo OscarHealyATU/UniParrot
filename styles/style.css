@@ -12,7 +12,7 @@
     --nav-padding: 18px;
     --transition: 150ms;
 
-    --inner-radius:20px;
+    --inner-radius:15px;
     --outer-radius: calc(10px + var(--inner-radius));
 
     
@@ -31,8 +31,7 @@ body{
     margin: 0;
     cursor: url('../assets/cursor.png') 64 12, auto;
     height: 100dvh;
-    background-color: var(--grey);
-    
+    background-color: var(--grey);   
 }
 
 nav {
@@ -74,18 +73,18 @@ nav img {
     height: 100px;
     width: 100px;
 }
-main{
-    min-height: 400px;
-
+.main{
+    min-height: 80dvh;
+    grid-column: span 2; 
     background-color: var(--ll-grey);
-    border: solid 2px var(--l-grey);
+    
 }
 aside{
-background-color: red;
-
+background-color: var(--ll-grey);
 }
 footer{
     color: var(--l-grey);
+    background-color: var(--grey);
 }
 footer a:link{
     color: var(--ll-grey);
@@ -95,4 +94,6 @@ footer a:link{
 footer a:visited{
     color: var(--ll-red);
     font-weight: lighter;
+    position: fixed;
+    bottom: 0;
 }
