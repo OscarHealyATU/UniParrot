@@ -15,18 +15,7 @@
 
 <body>
 
-    <nav class="nav1"><a href="">
-            <img src="assets/logo_no_bg.png" alt="">
-            <ul>
-                <li>Feed</li>
-                <li>Profile</li>
-                <li>Rules</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </a>
-
-    </nav>
+    <?php include 'components/navigation.php'; ?>
     <div class="feed-container">
 
         <div class="left-aside">
@@ -42,11 +31,7 @@
         </div>
     </div>
 
-    <footer>
-        <p>
-            footer: <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank">from w3schools</a>
-        </p>
-    </footer>
+    <?php include 'components/footer.php' ?>
 
 </body>
 
