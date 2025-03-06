@@ -16,17 +16,17 @@
 <body>
 
     <?php include 'components/navigation.php'; ?>
-    <div class="feed-container">
+    <div class="feed-container parallax-container">
 
-        <div class="left-aside">
+        <div class="left-aside paralax-back">
 
         </div>
 
-        <div id="feed-container-main" class="main">
+        <div id="feed-container-main" class="main paralax-front">
             <script src="scripts/feed.js"></script>
         </div>
 
-        <div class="right-aside">
+        <div class="right-aside paralax-back">
 
         </div>
     </div>

@@ -12,3 +12,7 @@
 .left-aside, .right-aside{
     background-color: var(--l-grey);
 }
+article:nth-child(odd){
+    background-color: var(--post-odd);
+    
+}
