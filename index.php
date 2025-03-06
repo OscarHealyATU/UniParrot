@@ -8,7 +8,7 @@
     <title>Uni Parrot</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles">
+    <link rel="stylesheet" href="styles/feedStyle.css">
     <link rel="stylesheet" href="styles/lightTheme.css">
 
 </head>
@@ -16,7 +16,7 @@
 <body>
 
     <nav class="nav1"><a href="">
-            <img src="assets/Logo.svg" alt="">
+            <img src="assets/logo_no_bg.png" alt="">
             <ul>
                 <li>Feed</li>
                 <li>Profile</li>
@@ -28,18 +28,15 @@
 
     </nav>
     <div class="feed-container">
+
         <div class="left-aside">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div id="feed-container-main">
 
         </div>
+
+        <div id="feed-container-main" class="main">
+            <script src="scripts/feed.js"></script>
+        </div>
+
         <div class="right-aside">
 
         </div>
