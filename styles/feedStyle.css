@@ -16,3 +16,7 @@ article:nth-child(odd){
     background-color: var(--post-odd);
     
 }
+article{
+    display: flex;
+    gap: 5dvw;
+}
