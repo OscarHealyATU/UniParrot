@@ -16,13 +16,13 @@
 <body>
 
     <?php include 'components/navigation.php'; ?>
-    <div class="feed-container parallax-container">
+    <div class="feed-container">
 
-        <div class="left-aside paralax-back">
+        <div class="left-aside">
 
         </div>
 
-        <div id="feed-container-main" class="main paralax-front">
+        <div id="feed-container-main" class="main">
             <script src="scripts/feed.js"></script>
         </div>
 
@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    <?php include 'components/footer.php';       ?>
+    <?php include 'components/footer.php'; ?>
 
 </body>
 
