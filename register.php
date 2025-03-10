@@ -10,9 +10,10 @@
 </head>
 <body>
     <?php include 'components/navigation.php'; ?>
-    
+    <div class="height-1">
+
+    </div>
     <main>
-    <div class="height-1"></div>
         <form action="" class="width-5 height-3">
             <div>
                 <label for="first-name">First Name</label>
@@ -30,7 +31,6 @@
 
 
         </form>
-        <div class="height-1"></div>
     </main>
     <?php include 'components/footer.php'; ?>
 

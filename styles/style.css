@@ -80,6 +80,9 @@ nav img {
     height: 100px;
     width: 100px;
 }
+main{
+    background-color: var(--l-grey);
+}
 
 article{
     border: solid 2px var(--ll-red);
