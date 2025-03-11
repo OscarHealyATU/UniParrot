@@ -1,17 +1,16 @@
+const feed = document.getElementById("feed-container-main");
+let content = "";
 for (let i = 0; i < 20; i++) {
-    document.writeln(`
+    content+= `
     <article>
-         <img src="profile_000${i}.png" alt="profile_000${i}" srcset="assets/profile/profile_000${i}.png" onerror="noProfile(this)">
+         <img src="profile_000${i}.png" alt="profile_000${i}" srcset="assets/profile/noProfile.png">
             <div>
                 <h3>Post Title</h3>
                 <strong>username</strong>
                 <p>Post body</p>
             </div>
     </article>
-        `);
-    
+        `;
 }
-function noProfile(image) {
-    image.onerror = null;
-    image.src = 'assets/profile/noProfile.png'; 
-}
+// content feed
+feed.innerHTML=content;
