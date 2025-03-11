@@ -1,0 +1,48 @@
+
+form {
+    background-color: var(--ll-grey);
+    margin: auto;
+    padding: var(--outer-radius);
+    border: solid 2px var(--grey);
+    border-radius: var(--small-radius);
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    padding-left: calc(var(--spacer-unit)*0.3);   
+}
+.form-header{
+    border-bottom: solid 2px var(--l-red);
+    margin-bottom: calc(var(--spacer-unit)*0.2);
+}
+form h1, form p{
+    text-align: center;
+    align-items: center;
+    margin-bottom: calc(var(--spacer-unit)*0.3);
+}
+form h1{
+    color: var(--l-red);
+}
+
+input[type=text],
+input[type=phone] {
+
+    height: 2rem;
+    margin: 10px;
+    padding: 2px;
+    border: solid 2px var(--grey);
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-family: cursive;
+    font-weight: 700;
+    color: var(--l-red);
+    font-size: large;
+
+}
+input:active,input:focus{
+    outline: solid 2px var(--l-red);
+    border: solid 2px var(--red);
+    background-color: var(--post-odd);
+    color: var(--grey);
+}

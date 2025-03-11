@@ -5,7 +5,7 @@
     <title>Uni Parrot | Sign Up</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/lightTheme.css">
+    <link rel="stylesheet" href="styles/formStyle.css">
 
 </head>
 
@@ -40,7 +40,7 @@
         </form>
         <div class="height-1"></div>
     </main>
-    <script src="scripts/phoneFormat.js"></script>
+    
     <?php include 'components/footer.php'; ?>
 
 </body>
