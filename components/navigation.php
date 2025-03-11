@@ -7,7 +7,7 @@
                 <a href="aboutUs.php"><li>About</li></a>
                 <a href="contact.php"><li>Contact</li></a>
             </ul>
-            <ul class="width-2">
+            <ul class="right-nav width-2">
                 <a href="login.php"><li>Sign in</li></a>
                 <a href="register.php"><li>Sign up</li></a>
             </ul>
