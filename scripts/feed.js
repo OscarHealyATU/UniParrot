@@ -1,7 +1,7 @@
 for (let i = 0; i < 20; i++) {
     document.writeln(`
     <article>
-         <img src="profile_0001.png" alt="profile_0001" srcset="assets/profile/profile_0001.png">
+         <img src="profile_000${i}.png" alt="profile_000${i}" srcset="assets/profile/profile_000${i}.png" onerror="noProfile(this)">
             <div>
                 <h3>Post Title</h3>
                 <strong>username</strong>
@@ -10,4 +10,8 @@ for (let i = 0; i < 20; i++) {
     </article>
         `);
     
+}
+function noProfile(image) {
+    image.onerror = null;
+    image.src = 'assets/profile/noProfile.png'; 
 }

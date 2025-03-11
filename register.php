@@ -41,7 +41,7 @@
         </form>
         <div class="height-1"></div>
     </main>
-    
+    <script src="scripts/formVal.js"></script>
     <?php include 'components/footer.php'; ?>
 
 </body>
