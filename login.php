@@ -5,6 +5,7 @@
     <title>Uni Parrot | Sign In</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/navigationStyle.css">
     <link rel="stylesheet" href="styles/formStyle.css">
 
 </head>

@@ -8,7 +8,7 @@
     <title>Uni Parrot | About Us</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/lightTheme.css">
+    <link rel="stylesheet" href="styles/navigationStyle.css">
 
 </head>
 
