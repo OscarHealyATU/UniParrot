@@ -1,10 +1,8 @@
 
 form {
     background-color: var(--ll-grey);
-    width: 75dvw;
     margin: auto;
     padding: var(--outer-radius);
-    border-radius: var(--small-radius);
 }
 
 form div {
@@ -30,7 +28,6 @@ input[type=phone] {
     margin: 10px;
     padding: 2px;
     border: solid 2px var(--grey);
-    border-radius: 2px;
     box-sizing: border-box;
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
@@ -79,8 +76,7 @@ margin: 0 var(--spacer-unit);
 
 .profile-main{
     padding-left: calc( var(--spacer-unit)*1);
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
 .profile-main input{
     width: calc( var(--spacer-unit)*3);

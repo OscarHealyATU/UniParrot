@@ -11,27 +11,17 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/navigationStyle.css">
     <link rel="stylesheet" href="styles/feedStyle.css">
-    
+
     <script src="scripts/theme.js"></script>
 </head>
 
 <body>
-
+    
     <?php include 'components/navigation.php'; ?>
-    <div class="feed-container">
-
-        <div class="left-aside">
-
-        </div>
-
-        <div id="feed-container-main" class="main"> 
+    <div class="main">
+        <div id="feed-container-main">
             <script src="scripts/feed.js"></script>
         </div>
-
-        <div class="right-aside paralax-back">
-
-        </div>
-        
     </div>
 
     <?php include 'components/footer.php'; ?>

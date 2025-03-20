@@ -3,16 +3,10 @@
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 .main{
-    background-color: var(--ll-grey);
+    /* */
     grid-column: span 3;
-    z-index: -1;
-    
-    
 }
-.left-aside, .right-aside{
-    background-color: var(--l-grey);
-    z-index: -1;
-}
+
 article:nth-child(odd){
     background-color: var(--post-odd);
 }
@@ -20,8 +14,18 @@ article{
     display: flex;
     gap: 5dvw;
     box-shadow: 10px 10px var(--l-grey);
+    
 }
-
+article p {
+    max-height: 100px;
+    overflow-y: hidden;
+}
+article strong {
+    padding-top: var(--small-radius);
+    display: block;
+    text-align: center;
+    
+}
 article img{
     height: 100px;
     margin: auto 0;

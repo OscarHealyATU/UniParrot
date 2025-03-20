@@ -14,8 +14,8 @@
 
 <body>
     <?php include 'components/navigation.php'; ?>
-    <main class="profile-container">
-    <form action="">
+    <div class="feed-container">
+    <form action="" class="main">
             <div class="profile-header">
                 <img src="assets/profile/noProfile.png" alt="">
                 <div>
@@ -40,7 +40,7 @@
                 <input type="email" name="email" id="email" value="[G00424324@atu.ie]" disabled>
             </div>
         </form>
-    </main>
+    </div>
 
     <?php include 'components/footer.php'; ?>
 

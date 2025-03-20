@@ -38,11 +38,17 @@ body {
     margin: 0;
     cursor: url('../assets/cursor.png') 64 12, auto;
     height: 100dvh;
-    background-color: var(--grey);;
+    background-color: var(--l-grey);
 }
 
-main {
-    background-color: var(--l-grey);
+.main{
+    margin: var(--nav-height) auto;
+    padding: var(--inner-radius );
+    width: 60dvw;
+    border: solid 3px var(--grey);
+    background-color: var(--ll-grey); 
+    box-shadow: 10px 10px var(--ll-red);
+    
 }
 
 article {
