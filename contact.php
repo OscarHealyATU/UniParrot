@@ -12,6 +12,7 @@
 </head>
 <body>
 <?php include 'components/navigation.php'; ?>
+<main class="main"></main>
 <?php include 'components/footer.php'; ?>
     
 </body>

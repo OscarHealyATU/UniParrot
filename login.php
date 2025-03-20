@@ -13,10 +13,10 @@
 <body>
     <?php include 'components/navigation.php'; ?>
 
-    <main>
-        <div class="height-1"></div>
+    <main class="main">
+        
 
-        <form action="" class="width-5 height-3">
+        <form action="" class="width-5 height-3" >
             <div class="form-header">
                 <h1>Sign In</h1>
                 <a href="register.php">
@@ -39,7 +39,7 @@
 
 
         </form>
-        <div class="height-1"></div>
+        
     </main>
     <script src="scripts/formVal.js"></script>
     <?php include 'components/footer.php'; ?>

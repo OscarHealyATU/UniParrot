@@ -14,9 +14,9 @@
 
 <body>
     <?php include 'components/navigation.php'; ?>
-    <div class="box height-1">
+    <main class="main"></main>
 
-    </div>
+    
     
     <?php include 'components/footer.php'; ?>
 

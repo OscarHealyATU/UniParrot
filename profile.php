@@ -15,8 +15,10 @@
 <body>
     <?php include 'components/navigation.php'; ?>
     <div class="feed-container">
-    <form action="" class="main">
+        <form action="" class="main">
+            <h1>Profile Page</h1>
             <div class="profile-header">
+
                 <img src="assets/profile/noProfile.png" alt="">
                 <div>
                     <label for="fullName">Name</label>
@@ -26,7 +28,7 @@
                         value="[I am a Computing & digital Media Student]" disabled>
                 </div>
             </div>
-            
+
             <div class="profile-main">
                 <label for="username">User name</label>
                 <input type="text" name="username" id="username" value="[lazy_cat25]" disabled>

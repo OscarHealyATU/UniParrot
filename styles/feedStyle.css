@@ -14,11 +14,29 @@ article{
     display: flex;
     gap: 5dvw;
     box-shadow: 10px 10px var(--l-grey);
+    transition: 200ms;
+}
+article:hover{
+    box-shadow: 5px 5px var(--ll-red);
     
 }
 article p {
     max-height: 100px;
-    overflow-y: hidden;
+    overflow: hidden;
+    padding: var(--inner-radius);
+    /* border: solid 1px var(--post-even); */
+    position: relative;
+}
+article p::before{
+    content: '';
+    background: linear-gradient(rgba(0,0,0,0),var(--ll-grey)80%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+}
+article:nth-child(odd) p::before{
+    background: linear-gradient(rgba(0,0,0,0),var(--post-odd)80%);
 }
 article strong {
     padding-top: var(--small-radius);
@@ -29,4 +47,12 @@ article strong {
 article img{
     height: 100px;
     margin: auto 0;
+}
+.read-more{
+    font-style: italic;
+    color: var(--ll-red);
+    transition: 200ms;
+}
+.read-more:hover{
+    font-weight: 600;
 }

@@ -16,16 +16,15 @@
 </head>
 
 <body>
-    
     <?php include 'components/navigation.php'; ?>
     <div class="main">
         <div id="feed-container-main">
             <script src="scripts/feed.js"></script>
         </div>
+        <!-- article click more -->
+        
     </div>
-
     <?php include 'components/footer.php'; ?>
-
 </body>
 
 </html>

@@ -28,7 +28,15 @@
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 500;
 }
-
+h1, h2, h3, strong {
+    font-family: "Roboto Slab", serif;
+    
+}
+h1, h2 {
+    filter: drop-shadow(3px 3px var(--l-grey));
+    font-size: 3em;
+    color: var(--l-red);
+}
 ::selection {
     background-color: var(--l-red);
     color: var(--ll-grey);

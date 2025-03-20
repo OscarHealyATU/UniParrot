@@ -13,8 +13,7 @@
 <body>
     <?php include 'components/navigation.php'; ?>
 
-    <main>
-        <div class="height-1"></div>
+    <main class="main">
 
         <form action="" class="width-5 height-3">
             <div class="form-header">
@@ -37,9 +36,8 @@
                 <input type="phone" name="phone" id="phone" class="width-2">
             </div>
 
-
         </form>
-        <div class="height-1"></div>
+        
     </main>
     <script src="scripts/formVal.js"></script>
     <?php include 'components/footer.php'; ?>
