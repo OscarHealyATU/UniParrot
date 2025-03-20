@@ -1,9 +1,9 @@
 
 form {
     background-color: var(--ll-grey);
+    width: 75dvw;
     margin: auto;
     padding: var(--outer-radius);
-    border: solid 2px var(--grey);
     border-radius: var(--small-radius);
 }
 
@@ -12,10 +12,7 @@ form div {
     flex-direction: column;
     padding-left: calc(var(--spacer-unit)*0.3);   
 }
-.form-header{
-    border-bottom: solid 2px var(--l-red);
-    margin-bottom: calc(var(--spacer-unit)*0.2);
-}
+
 form h1, form p{
     text-align: center;
     align-items: center;
@@ -26,6 +23,7 @@ form h1{
 }
 
 input[type=text],
+input[type=email],
 input[type=phone] {
 
     height: 2rem;
@@ -34,8 +32,8 @@ input[type=phone] {
     border: solid 2px var(--grey);
     border-radius: 2px;
     box-sizing: border-box;
-    font-family: cursive;
-    font-weight: 700;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
     color: var(--l-red);
     font-size: large;
 
@@ -45,4 +43,45 @@ input:active,input:focus{
     border: solid 2px var(--red);
     background-color: var(--post-odd);
     color: var(--grey);
+}
+input:disabled{
+    color: var(--grey);
+    background-color: var(--post-even);
+    user-select: none;
+}
+
+.profile-header, .profile-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--ll-grey);
+    margin: 0 var(--spacer-unit);
+    padding: calc(var(--spacer-unit)*0.25) 0;
+    
+}
+.profile-header img {
+    border-radius: 50%;
+    padding: var(--inner-radius);
+}
+.profile-header div{
+display: flex;
+flex-direction: column;
+margin: 0 var(--spacer-unit);
+}
+
+.profile-header div label, 
+.profile-main label {
+    margin: 0 var(--inner-radius);
+    width: calc( var(--spacer-unit)*3);
+    
+}
+
+.profile-main{
+    padding-left: calc( var(--spacer-unit)*1);
+    flex-direction: column;
+    
+}
+.profile-main input{
+    width: calc( var(--spacer-unit)*3);
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 :root {
     /* color scheme */
     --grey: #262524;
@@ -6,13 +8,12 @@
     --red: #d93e30;
     --l-red: #bf3f3f;
     --ll-red: #aa7070;
-
     --post-odd: #f8d4d4;
     --post-even: #a2a2a2;
 
     /* site variables */
     --spacer-unit: 20dvh;
-    --nav-height: 100px;
+    --nav-height: 50px;
     --nav-padding: 18px;
     --transition: 150ms;
 
@@ -24,7 +25,8 @@
     /* reset spacing */
     margin: 0;
     padding: 0;
-    font-family: cursive;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
 }
 
 ::selection {
@@ -36,7 +38,7 @@ body {
     margin: 0;
     cursor: url('../assets/cursor.png') 64 12, auto;
     height: 100dvh;
-    background-color: var(--grey);
+    background-color: var(--grey);;
 }
 
 main {
@@ -58,7 +60,6 @@ footer {
 footer a:link {
     color: var(--ll-grey);
     font-weight: bold;
-
 }
 
 footer a:visited {
@@ -67,8 +68,6 @@ footer a:visited {
     position: fixed;
     bottom: 0;
 }
-
-
 
 .height-1 {
     height: calc(var(--spacer-unit)*1);

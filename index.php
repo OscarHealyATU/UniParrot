@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uni Parrot</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles/color.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/navigationStyle.css">
     <link rel="stylesheet" href="styles/feedStyle.css">
     
-
+    <script src="scripts/theme.js"></script>
 </head>
 
 <body>
@@ -23,13 +24,14 @@
 
         </div>
 
-        <div id="feed-container-main" class="main">
+        <div id="feed-container-main" class="main"> 
             <script src="scripts/feed.js"></script>
         </div>
 
         <div class="right-aside paralax-back">
 
         </div>
+        
     </div>
 
     <?php include 'components/footer.php'; ?>

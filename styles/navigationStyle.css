@@ -1,27 +1,33 @@
 nav {
-    background-color: var(--l-red);
-    border-bottom: solid 5px var(--l-red);
-    box-shadow: 0 0px 8px var(--grey);
+    /* background-color: var(--l-red); */
+    background-color: var(--grey);
+    box-shadow: 0 10px var(--grey);
     width: 100dvw;
-    height: var(--nav-height);
-    z-index: 100;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
+nav:hover{
+    transition: 200ms;
+    box-shadow: 0 10px var(--red);
+}
+.right-nav:hover{
+    transition: 200ms;
+    box-shadow: 0 10px var(--ll-grey);
+}
 
 .right-nav {
-    height: 105px;
+    height: 75px;
     background-color: var(--grey);
+    box-shadow: 0 10px  var(--red);
 }
 
 .right-nav li:hover {
-    background-color: var(--ll-grey);
-    color: var(--l-red);
+    color: var(--l-red);    
 }
 
 .right-nav li:active {
-    background-color: var(--l-grey);
+    color: var(--l-grey);
 }
 
 nav ul {
@@ -35,23 +41,24 @@ nav ul {
 
 nav ul li {
     color: var(--ll-grey);
+    font-family: "Roboto Slab", serif;
     font-size: 1.5em;
     padding: var(--nav-padding) calc(10px + var(--nav-padding));
     border-radius: var(--inner-radius);
 }
 
 nav ul li:hover {
-    background: var(--grey);
+    color: var(--l-grey);
     transition: var(--transition);
-
 }
 
 nav ul li:active {
-    background: var(--ll-grey);
+    
     color: var(--l-red);
 }
 
 nav img {
-    height: 100px;
-    width: 100px;
+    height: var(--nav-height);
+    width: var(--nav-height);
+    padding: 10px;
 }
