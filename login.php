@@ -14,32 +14,34 @@
     <?php include 'components/navigation.php'; ?>
 
     <main class="main">
-        
 
-        <form action="" class="width-5 height-3" >
+
+        <form action="" class="width-5 height-3">
             <div class="form-header">
                 <h1>Sign In</h1>
                 <a href="register.php">
                     <p>Register Here if you're new to the site</p>
                 </a>
             </div>
-            <div>
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name" class="width-1">
-
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name" class="width-1">
-                <br>
+            
+            <div class="form-bit">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name">
+            </div>
+            
+            <div class="form-bit">
                 <label for="email">Email </label>
-                <input type="text" name="email" id="" class="width-2">
-                <br>
+                <input type="text" name="email" id="">
+
                 <label for="phone">Phone</label>
-                <input type="phone" name="phone" id="phone" class="width-2">
+                <input type="phone" name="phone" id="phone">
             </div>
 
 
         </form>
-        
+
     </main>
     <script src="scripts/formVal.js"></script>
     <?php include 'components/footer.php'; ?>
