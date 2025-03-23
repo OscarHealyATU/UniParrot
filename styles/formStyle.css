@@ -6,7 +6,7 @@
 form {
     background-color: var(--ll-grey);
     margin: auto;
-    padding-left: calc(var(--spacer-unit)*0.3);   
+    padding-left: auto;   
     }
 
 form h1, form p{
@@ -22,13 +22,9 @@ input[type=email],
 input[type=phone] {
     margin-left: 20px;
     height: 2rem;
-    width: 100%;
     border: solid 2px var(--grey);
-    border:none;
     border-radius: 10px;
     background-color: var(--l-grey);
-    padding: 20px;
-    box-sizing: border-box;
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
     color: var(--l-red);
@@ -51,7 +47,12 @@ input:active,input:focus{
     box-shadow: 10px 10px var(--ll-red);
 }
 .form-bit:nth-child(odd){
-    flex-direction: column;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto 1fr;
+}
+.form-bit:nth-child(even) input{
+    width: 100%;
 }
 
 .profile-header, .profile-main{

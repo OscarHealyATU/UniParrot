@@ -22,22 +22,29 @@
                     <p>Log in here if you're already registered to the site</p>
                 </a>
             </div>
-            <div>
+            <div class="form-bit">
                 <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name" class="width-1">
-
+                <input type="text" name="first-name" id="first-name">
                 <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name" class="width-1">
-                <br>
+                <input type="text" name="last-name" id="last-name">
+            </div>
+            <div class="form-bit">
                 <label for="email">Email </label>
-                <input type="text" name="email" id="" class="width-2">
-                <br>
+                <input type="text" name="email" id="">
+
                 <label for="phone">Phone</label>
-                <input type="phone" name="phone" id="phone" class="width-2">
+                <input type="phone" name="phone" id="phone">
             </div>
 
         </form>
-        
+
+
+
+
+
+
+        </form>
+
     </main>
     <script src="scripts/formVal.js"></script>
     <?php include 'components/footer.php'; ?>
