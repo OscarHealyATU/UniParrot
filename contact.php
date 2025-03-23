@@ -12,7 +12,9 @@
 </head>
 <body>
 <?php include 'components/navigation.php'; ?>
-<main class="main"></main>
+<main class="main">
+<h1>Co  ntact UniParot</h1>
+</main>
 <?php include 'components/footer.php'; ?>
     
 </body>

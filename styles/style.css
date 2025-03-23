@@ -32,10 +32,19 @@ h1, h2, h3, strong {
     font-family: "Roboto Slab", serif;
     
 }
-h1, h2 {
+h1{
     filter: drop-shadow(3px 3px var(--l-grey));
+    
+}
+h1{
+    text-align: center;
     font-size: 3em;
     color: var(--l-red);
+}
+h2{
+    padding-left: 1em;
+    font-size: 2em;
+    filter: drop-shadow(2px 2px var(--l-grey));
 }
 ::selection {
     background-color: var(--l-red);

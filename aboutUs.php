@@ -14,7 +14,9 @@
 
 <body>
     <?php include 'components/navigation.php'; ?>
-    <main class="main"></main>
+    <main class="main">
+    <h1>About UniParot</h1>
+    </main>
 
     
     

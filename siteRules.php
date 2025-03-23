@@ -12,7 +12,18 @@
 </head>
 <body>
 <?php include 'components/navigation.php'; ?>
-<main class="main"></main>
+<main class="main">
+    <h1>Site Rules</h1>
+    <h2>Here are some of our rules</h2>
+    <ul>
+        <li>No Off Topic Posts</li>
+        <li>No Harrassment or Bullying</li>
+        <li>No Doxxing (publish private or identifying information about (a particular individual) on the internet)</li>
+        <li>No Hate speech will be tollerated in any capacity</li>
+        <li>No mention/ admission etc, of illegal substance use or illegal activity is allowed</li>
+        <li>overly controversial or disliked comments may be removed at our discretion.</li>
+    </ul>
+</main>
 <?php include 'components/footer.php'; ?>
     
 </body>
