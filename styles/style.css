@@ -135,3 +135,27 @@ footer a:visited {
 .width-5 {
     width: calc(var(--spacer-unit)*5);
 }
+.prev, .next{
+    padding: 20px;
+    border-radius: 30px;
+    position: fixed;
+    top: 50%;
+    background-color: var(--grey);
+    transform: translateY(-50%);
+    opacity: .9;
+    transition: 200ms;
+    color: var(--ll-grey);
+}
+.prev{
+    left:10%;
+}
+.next{
+    right:10%;  
+}
+.next:hover{
+    background-color: var(--ll-red);
+    opacity: .7;
+}.prev:hover{
+    background-color: var(--l-red);
+    
+}

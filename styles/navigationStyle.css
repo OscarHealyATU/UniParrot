@@ -59,6 +59,14 @@ nav ul li:active {
 
 nav img {
     height: var(--nav-height);
-    width: var(--nav-height);
     padding: 10px;
+    transition: 200ms;
+    border: solid 2px var(--grey);
+    box-shadow: 4px 4px var(--grey),
+                -4px -4px var(--grey);
+}
+nav img:hover {
+    background-color: white;
+    box-shadow: 4px 4px var(--l-grey),
+                -4px -4px var(--l-red);
 }

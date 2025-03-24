@@ -1,7 +1,7 @@
 <nav class="nav1"><a href="">
-            <img src="assets/logo_no_bg.png" alt="">
+            <img src="assets/UI/nav.png" alt="">
             <ul class="width-3">
-                <a href="index.php"><li>Feed</li></a>
+                <a href="index.php"><li>Posts</li></a>
                 <a href="profile.php"><li>Profile</li></a>
                 <a href="siteRules.php"><li>Rules</li></a>
                 <a href="aboutUs.php"><li>About</li></a>
