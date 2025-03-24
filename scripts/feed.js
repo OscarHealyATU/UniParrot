@@ -4,7 +4,7 @@ for (let i = 0; i < 20; i++) {
     content+= `
     <article>
         <div>
-            <img src="profile_000${i}.png" alt="profile_000${i}" srcset="assets/profile/noProfile.png">
+            <img src="profile_000${i}.png" alt="profile_000${i}" srcset="assets/UI/noProfile.png">
             <strong>username</strong>
            
         </div>  
