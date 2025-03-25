@@ -40,11 +40,14 @@ h1{
     text-align: center;
     font-size: 3em;
     color: var(--l-red);
+    border-bottom: 2px solid var(--l-red);
+    margin-bottom: var(--spacer-unit);
 }
 h2{
     padding-left: 1em;
     font-size: 2em;
     filter: drop-shadow(2px 2px var(--l-grey));
+    
 }
 ::selection {
     background-color: var(--l-red);
@@ -136,26 +139,26 @@ footer a:visited {
     width: calc(var(--spacer-unit)*5);
 }
 .prev, .next{
-    padding: 20px;
-    border-radius: 30px;
-    position: fixed;
-    top: 50%;
-    background-color: var(--grey);
-    transform: translateY(-50%);
-    opacity: .9;
-    transition: 200ms;
-    color: var(--ll-grey);
+    cursor: pointer;
+  position: absolute;
+  top: 90%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--ll-grey);
+  transition: 200ms;
+  background-color: var(--grey);
+  user-select: none;
 }
 .prev{
-    left:10%;
+    left:20%; 
+    border-radius: 0 var(--inner-radius) var(--inner-radius) 0;
 }
 .next{
-    right:10%;  
+    right:20%;  
+    border-radius: var(--inner-radius) 0 0 var(--inner-radius);
 }
-.next:hover{
-    background-color: var(--ll-red);
-    opacity: .7;
-}.prev:hover{
-    background-color: var(--l-red);
-    
+.next:hover, .prev:hover{
+    background-color: var(--grey);
+    opacity: .5;
 }

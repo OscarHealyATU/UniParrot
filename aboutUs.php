@@ -53,8 +53,8 @@
                 <div class="captionText"></div>
             </div>
 
-            <a class="prev" onclick="plusSlides(-1)"><img src="../assets/UI/Letters/6.png" alt="prev_image" class="prev_image"><br>Previous</a>
-            <a class="next" onclick="plusSlides(1)"><img src="../assets/UI/Letters/7.png" alt="next_image" class="next_image"><br>next</a>
+            <a class="prev" onclick="plusSlides(-1)"><img src="../assets/UI/prev_arrow.png" alt="prev_image" class="prev_image"><br>Previous</a>
+            <a class="next" onclick="plusSlides(1)"><img src="../assets/UI/next_arrow.png" alt="next_image" class="next_image"><br>next</a>
 
         </div>
         <p>Users will need to sign up with a student email account but do not need to use their names in their
