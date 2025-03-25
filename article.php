@@ -79,7 +79,7 @@
         </div>
         <script src="scripts/comments.js"></script>
     </main>
-   
+    <?php include 'components/footer.php'; ?>
 </body>
 
 </html>

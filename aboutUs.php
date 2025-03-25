@@ -15,7 +15,7 @@
 <body>
     <?php include 'components/navigation.php'; ?>
     <main class="main">
-        <h1>About UniParot</h1>
+        <h1>About UniParrot</h1>
         <p>We are an online communication hub for students to discuss different topics with a focus on college and college
             adjacent subjects.</p>
         <h2>UNIPARROT</h2>
