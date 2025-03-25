@@ -67,5 +67,5 @@
         
     </main>
     <script src="scripts/slideshow"></script>
-
+    <?php include 'components/footer.php'; ?>
 </html>

@@ -118,32 +118,7 @@ input:focus {
     user-select: none;
 }
 
-button {
-    border: 2px solid var(--grey);
-    box-shadow: 5px 5px var(--l-grey);
-    color: var(--grey);
-    background-color: var(--red);
-    transition: 200ms;
-    margin: var(--inner-radius);
-    font-size: large;
-    font-weight: 900;
-    width: var(--spacer-unit);
-    padding: var(--inner-radius);
-}
 
-button:hover {
-    border: 2px solid var(--red);
-    box-shadow: 5px 5px var(--ll-red);
-    color: var(--grey);
-    background-color: var(--ll-grey);
-}
-
-button:active {
-    border: 2px solid var(--l-red);
-    box-shadow: 5px 5px var(--ll-red);
-    color: var(--ll-grey);
-    background-color: var(--grey);
-}
 
 .comment {
     width: calc(var(--spacer-unit) * 4);
