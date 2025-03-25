@@ -35,7 +35,7 @@
                 <label for="phone">Phone</label>
                 <input type="phone" name="phone" id="phone">
             </div>
-
+            <button class="submit">Sign up</button>
         </form>
 
 
