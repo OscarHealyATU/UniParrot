@@ -80,10 +80,21 @@ body {
     width: 60dvw;
     border: solid 3px var(--grey);
     background-color: var(--ll-grey); 
-    box-shadow: 10px 10px var(--ll-red);
-    
+    box-shadow: 10px 10px var(--ll-red);   
 }
-
+aside {
+    position: sticky;
+    top:var(--nav-height);
+    z-index: 2;
+    
+    background-color: var(--ll-grey);
+}
+.aside{
+   
+    border: 2px solid var(--grey);
+    display: flex;
+    flex-direction: column;
+}
 article {
     border: solid 2px var(--ll-red);
     padding: var(--inner-radius);

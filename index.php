@@ -17,9 +17,12 @@
 
 <body>
     <?php include 'components/navigation.php'; ?>
+    
     <div class="main">
+   
         <h1>Popular Posts</h1>
         <!-- Hard coded Article -->
+        <?php include 'components/leftAside.php'; ?>
         <a href="article.php" target="_blank">
             <article>
                 <div>
