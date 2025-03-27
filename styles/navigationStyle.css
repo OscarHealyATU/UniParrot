@@ -11,22 +11,21 @@ nav:hover{
     transition: 200ms;
     box-shadow: 0 10px var(--red);
 }
-.right-nav:hover{
+.small-nav:hover{
     transition: 200ms;
     box-shadow: 0 10px var(--ll-grey);
 }
 
-.right-nav {
-    height: 75px;
+.small-nav {    
     background-color: var(--grey);
     box-shadow: 0 10px  var(--red);
 }
 
-.right-nav li:hover {
+.small-nav li:hover {
     color: var(--l-red);    
 }
 
-.right-nav li:active {
+.small-nav li:active {
     color: var(--l-grey);
 }
 

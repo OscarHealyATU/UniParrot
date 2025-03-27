@@ -7,18 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uni Parrot</title>
     <link rel="icon" type="image/x-icon" href="assets/UI/favicon.png">
-    <link rel="stylesheet" href="styles/color.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/navigationStyle.css">
     <link rel="stylesheet" href="styles/feedStyle.css">
-
-    <script src="scripts/theme.js"></script>
 </head>
 
 <body>
     <?php include 'components/navigation.php'; ?>
     
-    <div class="main">
+    <main class="main">
    
         <h1>Popular Posts</h1>
         <!-- Hard coded Article -->
@@ -87,7 +84,7 @@
         </div>
         <!-- article click more -->
 
-    </div>
+    </main>
     <?php include 'components/footer.php'; ?>
 </body>
 

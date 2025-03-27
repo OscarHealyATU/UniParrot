@@ -12,10 +12,7 @@
 
 <body>
     <?php include 'components/navigation.php'; ?>
-
     <main class="main">
-
-
         <form action="" class="width-5 height-3">
             <div class="form-header">
                 <h1>Sign In</h1>
@@ -23,7 +20,6 @@
                     <p>Register Here if you're new to the site</p>
                 </a>
             </div>
-
             <div class="form-bit">
                 <label for="first-name">First Name</label>
                 <input type="text" name="first-name" id="first-name">
