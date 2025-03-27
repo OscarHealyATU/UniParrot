@@ -203,7 +203,11 @@ footer a:visited {
     padding: var(--inner-radius);
 }
 .bBox{
-
+    box-shadow: 10px 10px var(--l-grey);
+    
+}
+.bBox:hover{
+    box-shadow: 5px 5px var(--ll-red);
 }
 .cBox{
     font-family: "Montserrat Alternates", sans-serif;
@@ -215,7 +219,13 @@ footer a:visited {
     border: solid 1px var(--grey);
 }
 .dBox{
-    
+    border: solid 2px var(--grey);
+    padding: 20px;
+    box-shadow: 10px 10px var(--l-grey);
+    transition: 200ms;
+}
+.dBox:hover{
+    box-shadow: 10px 10px var(--ll-red);
 }
 .flex-column{
     display: flex;

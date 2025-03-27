@@ -2,7 +2,7 @@ const feed = document.getElementById("feed-container-main");
 let content = "";
 for (let i = 0; i < 20; i++) {
     content+= `
-    <article>
+    <article class="bBox">
         <div>
             <img src="profile_000${i}.png" alt="profile_000${i}" srcset="assets/UI/noProfile.png">
             <strong>username</strong>

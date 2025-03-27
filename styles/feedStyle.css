@@ -4,13 +4,7 @@ article:nth-child(odd){
 }
 article{
     display: flex;
-    gap: 5dvw;
-    box-shadow: 10px 10px var(--l-grey);
     transition: 200ms;
-}
-article:hover{
-    box-shadow: 5px 5px var(--ll-red);
-    
 }
 article p {
     max-height: 100px;

@@ -18,9 +18,9 @@
     <div class="abox">
         <form action="">
             <h1>Profile Page</h1>
-            <div class="profile-header">
+            <div class="profile-header dBox">
 
-                <img src="assets/profile/noProfile.png" alt="">
+                <img src="assets/profile/UI/noProfile.png" alt="">
                 <div>
                     <label for="fullName">Name</label>
                     <input type="text" name="fullName" id="fullName" value="[Oscar Healy]" disabled>
@@ -30,7 +30,7 @@
                 </div>
             </div>
 
-            <div class="profile-main">
+            <div class="profile-main dBox">
                 <label for="username">User name</label>
                 <input type="text" name="username" id="username" value="[lazy_cat25]" disabled>
                 <label for="name">First Name</label>

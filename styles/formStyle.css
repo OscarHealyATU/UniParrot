@@ -48,14 +48,7 @@ input:focus {
 .form-bit {
     margin-bottom: 10px;
     display: flex;
-    border: solid 2px var(--grey);
-    padding: 20px;
-    box-shadow: 10px 10px var(--l-grey);
-    transition: 200ms;
-}
-
-.form-bit:hover{
-    box-shadow: 10px 10px var(--ll-red);
+    
 }
 
 .form-bit:nth-child(odd) {

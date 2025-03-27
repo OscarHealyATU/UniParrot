@@ -1,3 +1,4 @@
+<?php session_start();?>
 <nav class="nav1">
     <a href="">
         <img src="assets/UI/nav.png" alt="">

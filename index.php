@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/navigationStyle.css">
     <link rel="stylesheet" href="styles/feedStyle.css">
-    <?php session_start(); ?>
 </head>
 
 <body>

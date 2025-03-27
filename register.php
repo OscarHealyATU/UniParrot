@@ -22,20 +22,20 @@
                     <p>Log in here if you're already registered to the site</p>
                 </a>
             </div>
-            <div class="form-bit">
+            <div class="form-bit dBox">
                 <label for="first-name">First Name</label>
                 <input type="text" name="first-name" id="first-name">
                 <label for="last-name">Last Name</label>
                 <input type="text" name="last-name" id="last-name">
             </div>
-            <div class="form-bit">
+            <div class="form-bit dBox">
                 <label for="email">Email </label>
                 <input type="text" name="email" id="">
 
                 <label for="phone">Phone</label>
                 <input type="phone" name="phone" id="phone">
             </div>
-            <button class="submit">Sign up</button>
+            <button class="dBox">Sign up</button>
         </form>
 
 
