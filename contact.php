@@ -13,7 +13,10 @@
 <body>
 <?php include 'components/navigation.php'; ?>
 <main class="main">
+    <div class="abox">
+        
 <h1>Contact UniParot</h1>
+    </div>
 </main>
 <?php include 'components/footer.php'; ?>
     

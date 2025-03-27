@@ -13,7 +13,8 @@
 <body>
 <?php include 'components/navigation.php'; ?>
 <main class="main">
-    <h1>Site Rules</h1>
+  <div class="abox">
+  <h1>Site Rules</h1>
     <h2>Here are some of our rules</h2>
     <ul>
         <li>No Off Topic Posts</li>
@@ -23,6 +24,7 @@
         <li>No mention/ admission etc, of illegal substance use or illegal activity is allowed</li>
         <li>overly controversial or disliked comments may be removed at our discretion.</li>
     </ul>
+  </div>
 </main>
 <?php include 'components/footer.php'; ?>
     

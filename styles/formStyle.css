@@ -16,24 +16,20 @@ form p {
     margin-bottom: calc(var(--spacer-unit)*0.3);
 }
 
-
-
 input[type=text],
 input[type=email],
 input[type=phone] {
     margin-left: 20px;
-    height: 2rem;
-    border: none;
-    
-    background-color: var(--ll-grey);
+    height: 2rem;   
+    transition: 200ms;
+
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
-    color: var(--l-red);
     font-size: large;
+    color: var(--l-red);
+    background-color: var(--ll-grey);
     box-shadow: inset 2px 2px var(--grey), inset -3px -3px rgba(255, 255, 255, 0.5);
-    
     border: solid 1px var(--grey);
-    transition: 200ms;
 }
 
 label {
@@ -78,8 +74,6 @@ input:focus {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: var(--ll-grey);
-    margin: 0 var(--spacer-unit);
     padding: calc(var(--spacer-unit)*0.25) 0;
 
 

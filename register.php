@@ -13,7 +13,7 @@
 <body>
     <?php include 'components/navigation.php'; ?>
 
-    <main class="main">
+    <main class="main abox">
 
         <form action="" class="width-5 height-3">
             <div class="form-header">

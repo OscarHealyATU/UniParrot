@@ -14,8 +14,9 @@
 
 <body>
     <?php include 'components/navigation.php'; ?>
-    <div class="feed-container">
-        <form action="" class="main">
+    <main class="main">
+    <div class="abox">
+        <form action="">
             <h1>Profile Page</h1>
             <div class="profile-header">
 
@@ -43,6 +44,7 @@
             </div>
         </form>
     </div>
+    </main>
 
     <?php include 'components/footer.php'; ?>
 
