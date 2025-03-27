@@ -92,8 +92,9 @@ aside {
     width: 18dvw;
     
 }
-.left-aside div{
+aside div{
     transition: 2s;
+    display: none;
 }
 article {
     border: solid 2px var(--ll-red);
@@ -200,4 +201,8 @@ footer a:visited {
     border: solid 3px var(--grey);
     background-color: var(--ll-grey); 
     box-shadow: 10px 10px var(--ll-red);   
+}
+.flex-column{
+    display: flex;
+    flex-direction: column  ;
 }
