@@ -10,16 +10,17 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/navigationStyle.css">
     <link rel="stylesheet" href="styles/feedStyle.css">
+    <?php session_start();?>
 </head>
 
 <body>
     <?php include 'components/navigation.php'; ?>
     
-    <main class="main">
+    <main class="main abox">
    
         <h1>Popular Posts</h1>
         <!-- Hard coded Article -->
-        <?php include 'components/leftAside.php'; ?>
+        
         <a href="article.php" target="_blank">
             <article>
                 <div>
@@ -83,8 +84,9 @@
             <script src="scripts/feed.js"></script>
         </div>
         <!-- article click more -->
-
+        <!-- <script src="scripts/function.js"></script> -->
     </main>
+    <?php include 'components/leftAside.php'; ?>
     <?php include 'components/footer.php'; ?>
 </body>
 

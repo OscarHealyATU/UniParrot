@@ -78,22 +78,22 @@ body {
     margin: var(--nav-height) auto;
     padding: var(--inner-radius );
     width: 60dvw;
-    border: solid 3px var(--grey);
-    background-color: var(--ll-grey); 
-    box-shadow: 10px 10px var(--ll-red);   
 }
 aside {
-    position: sticky;
+    position: fixed;
+    margin-top: calc(var(--spacer-unit)*.4);
     top:var(--nav-height);
     z-index: 2;
-    
     background-color: var(--ll-grey);
 }
-.aside{
-   
-    border: 2px solid var(--grey);
+.left-aside{
     display: flex;
     flex-direction: column;
+    width: 18dvw;
+    
+}
+.left-aside div{
+    transition: 2s;
 }
 article {
     border: solid 2px var(--ll-red);
@@ -101,7 +101,21 @@ article {
     margin: var(--outer-radius);
     background-color: var(--ll-grey);
 }
-
+.caron{
+    float: inline-end;
+    padding-right: var(--outer-radius);
+    text-shadow: 1px 1px var(--grey);
+    background-color: var(--red);
+    border-radius: 3px 0 0 3px;
+    padding: 0 var(--inner-radius);
+}
+.hide{
+    display: none;
+}
+a {
+    text-decoration: none;
+    color: var(--grey);
+}
 footer {
     color: var(--l-grey);
     background-color: var(--grey);
@@ -137,10 +151,6 @@ footer a:visited {
 
 .height-5 {
     height: calc(var(--spacer-unit)*5);
-}
-
-.box {
-    border: solid 3px red;
 }
 
 .width-1 {
@@ -185,4 +195,9 @@ footer a:visited {
 .next:hover, .prev:hover{
     background-color: var(--grey);
     opacity: .5;
+}
+.abox{
+    border: solid 3px var(--grey);
+    background-color: var(--ll-grey); 
+    box-shadow: 10px 10px var(--ll-red);   
 }
