@@ -119,7 +119,7 @@ textarea {
 }
 
 aside div {
-    transition: 2s;
+    transition: 2ms;
 
 }
 
@@ -135,13 +135,13 @@ article {
 }
 
 .caron {
-    float: inline-end;
-    padding-right: var(--outer-radius);
-    color: var(--ll-grey);
-    /* text-shadow: 1px 1px var(--grey); */
-    background-color: var(--red);
-    border-radius: 3px 0 0 3px;
-    padding: 0 var(--inner-radius);
+    display: flex;
+    margin: calc(var(--inner-radius)*-1);
+    margin-bottom: 0;
+    padding-left: var(--inner-radius);
+}
+.caron:hover {
+    color: var(--l-red);
 }
 
 .hide {
