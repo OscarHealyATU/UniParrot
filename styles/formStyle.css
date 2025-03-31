@@ -16,9 +16,7 @@ form p {
     margin-bottom: calc(var(--spacer-unit)*0.3);
 }
 
-input[type=text],
-input[type=email],
-input[type=phone] {
+input {
     margin-left: 20px;
     height: 2rem;   
     transition: 200ms;
