@@ -21,18 +21,14 @@
                 </a>
             </div>
             <div class="form-bit dBox">
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name">
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name">
+                <label for="username">Username </label>
+                <input type="text" name="username" id="username">
+
+                <label for="password">password</label>
+                <input type="password" name="password" id="password">
             </div>
+            
 
-            <div class="form-bit dBox">
-                <label for="email">Email </label>
-                <input type="text" name="email" id="">
-
-                <label for="phone">Phone</label>
-                <input type="phone" name="phone" id="phone">
             </div>
             <button class="dBox">Sign in</button>
 
@@ -40,6 +36,21 @@
 
     </main>
     <script src="scripts/formVal.js"></script>
-    <?php include 'components/footer.php'; ?>
+    <script>
+        function register(event) {
+            event.preventDefault();
+            let formData = new FormData(document.getElementById("registerForm"));
 
+            fetch("register.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("message").innerText = data;
+            });
+        }
+    </script>
+    <?php include 'components/footer.php'; ?>
+   
 </body>

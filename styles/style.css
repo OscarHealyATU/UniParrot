@@ -125,6 +125,7 @@ aside div {
 
 .make-post-container {
     display: none;
+
 }
 
 article {
@@ -137,11 +138,13 @@ article {
 .caron {
     display: flex;
     margin: calc(var(--inner-radius)*-1);
-    margin-bottom: 0;
+    margin-bottom: var(--inner-radius);
     padding-left: var(--inner-radius);
+    border-bottom: solid 2px var(--ll-grey);
 }
 .caron:hover {
     color: var(--l-red);
+    border-bottom: solid 2px var(--ll-red);
 }
 
 .hide {
@@ -282,6 +285,12 @@ footer a:visited {
 .flex-column {
     display: flex;
     flex-direction: column;
+    padding: var(--inner-radius);
+}
+
+.flex-column button{
+    margin: var(--outer-radius) 0;
+    margin-left: calc(var(--inner-radius)*-1);
 }
 
 input[type=text],

@@ -15,7 +15,7 @@
 
     <main class="main abox">
 
-        <form action="" class="width-5 height-3">
+        <form action="" class="width-5 height-3" id="registerForm">
             <div class="form-header">
                 <h1>Sign Up</h1>
                 <a href="login.php">
@@ -29,13 +29,21 @@
                 <input type="text" name="last-name" id="last-name">
             </div>
             <div class="form-bit dBox">
+                <label for="username">Username </label>
+                <input type="text" name="username" id="username">
+
+                <label for="password">password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="form-bit dBox">
                 <label for="email">Email </label>
                 <input type="text" name="email" id="">
 
                 <label for="phone">Phone</label>
                 <input type="phone" name="phone" id="phone">
             </div>
-            <button class="dBox">Sign up</button>
+            <div id="message" class="dbox">Message:</div>
+            <button class="bBox">Sign up</button>
         </form>
 
 
@@ -47,6 +55,23 @@
 
     </main>
     <script src="scripts/formVal.js"></script>
+    <script>
+        
+        function register(event) {
+            event.preventDefault();
+            let formData = new FormData(document.getElementById("registerForm"));
+
+            fetch("components/userRegister.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("message").innerText = data;
+            });
+        }
+
+    </script>
     <?php include 'components/footer.php'; ?>
 
 </body>
