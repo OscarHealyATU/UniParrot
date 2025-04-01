@@ -1,4 +1,5 @@
 <?php session_start();?>
+<?php include 'connectToDB.php'; ?>
 <nav class="nav1">
     <a href="">
         <img src="assets/UI/nav.png" alt="">

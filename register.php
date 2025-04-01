@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +9,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/navigationStyle.css">
     <link rel="stylesheet" href="styles/formStyle.css">
-
+   
 </head>
 
 <body>
@@ -15,7 +17,7 @@
 
     <main class="main abox">
 
-        <form action="" class="width-5 height-3" id="registerForm">
+        <form method="POST" class="width-5 height-3" id="registerForm">
             <div class="form-header">
                 <h1>Sign Up</h1>
                 <a href="login.php">
@@ -45,7 +47,7 @@
             <div id="message" class="dbox">Message:</div>
             <button class="bBox">Sign up</button>
         </form>
-
+       
 
 
 
@@ -56,7 +58,7 @@
     </main>
     <script src="scripts/formVal.js"></script>
     <script>
-        
+
         function register(event) {
             event.preventDefault();
             let formData = new FormData(document.getElementById("registerForm"));
