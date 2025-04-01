@@ -1,12 +1,12 @@
 <?php
- echo "<script>console.log('got to here');</script>";
+ require 'connectToDB.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $firstName = $_POST["first_name"];
     $lastName = $_POST["last_name"];
     
     $mobPhone = $_POST["phone"];
     $email = $_POST["email"];
-
+    $userType = "user";
     $username = $_POST["username"];
     $password = $_POST["password"];
 
@@ -18,12 +18,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
         // Insert into database
         $stmt = $conn->prepare("INSERT INTO users (username, user_type, first_name, last_name, phone, email, hashed_password) VALUES (?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("sssssss", $username, $firstName, $lastName,$mobPhone, $email, $hashedPassword);
+        $stmt->bind_param("sssssss", $username, $userType, $firstName, $lastName,$mobPhone, $email, $hashedPassword);
     
         if ($stmt->execute()) {
             echo "Registration successful!";
         } else {
+            
             echo "Error: " . $stmt->error;
+            
         }
     
         $stmt->close();
