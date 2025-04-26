@@ -17,7 +17,7 @@
 <body>
     <?php include 'components/navigation.php'; ?>
     <main class="main abox">
-        <form method="POST" action="" class="width-5 height-3" id="loginForm">
+        <form method="POST" action="" class="width-5 height-3" id="loginForm" onsubmit="login(event)">
             <div class="form-header">
                 <h1>Sign In</h1>
                 <a href="register.php">
@@ -53,7 +53,11 @@
             .then(response => response.json())
             .then(data => {
                 if (data.status === 'success') {
-                    window.location.href = "index.php";
+                    document.getElementById("message").innerText = data.message;
+                     // redirect after success message
+                     setTimeout(function() {
+                        window.location.href = 'index.php';
+                    }, 2000);
                 }else{
                     document.getElementById("message").innerText = data.message;
                 }
