@@ -61,7 +61,7 @@
                     body: formData
                 })
                 .then(response => response.text())
-                .then(data => {
+                .then(data => { 
                     document.getElementById("message").innerHTML = data;
                     // redirect after success message
                     setTimeout(function() {

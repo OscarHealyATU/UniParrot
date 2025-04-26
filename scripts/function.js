@@ -1,6 +1,6 @@
 const postPrompt = document.getElementById("postPrompt");
 if (postPrompt) {
-    
+
     const offset = postPrompt.offsetTop;
     window.addEventListener("scroll", () => {
         if (window.scrollY >= offset) {
