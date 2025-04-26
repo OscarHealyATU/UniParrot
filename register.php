@@ -62,7 +62,7 @@
                 })
                 .then(response => response.text())
                 .then(data => {
-                    document.getElementById("message").innerText = data;
+                    document.getElementById("message").innerHTML = data;
                 });
         }
     </script>
