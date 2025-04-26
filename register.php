@@ -63,6 +63,10 @@
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById("message").innerHTML = data;
+                    // redirect after success message
+                    setTimeout(function() {
+                        window.location.href = 'login.php';
+                    }, 2000);
                 });
         }
     </script>

@@ -22,7 +22,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
         if ($stmt->execute()) {
             echo "Registration successful!";
-            header("login.php");
+            
+            
         } else {
             echo "Error: " . $stmt->error; 
         }
