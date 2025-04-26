@@ -48,7 +48,7 @@
             <div id="message" class="abox">Message:</div>
             <button class="bBox">Sign up</button>
 
-        </form>
+        </form> 
     </main>
     <script src="scripts/formVal.js"></script>
     <script>

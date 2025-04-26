@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +17,7 @@
 <body>
     <?php include 'components/navigation.php'; ?>
     <main class="main abox">
-        <form action="" class="width-5 height-3">
+        <form method="POST" action="" class="width-5 height-3" id="loginForm">
             <div class="form-header">
                 <h1>Sign In</h1>
                 <a href="register.php">
@@ -26,28 +30,36 @@
 
                 <label for="password">password</label>
                 <input type="password" name="password" id="password">
+              
             </div>
-            
 
             </div>
+            <div id="message" class="abox">Message:</div>
             <button class="dBox">Sign in</button>
 
         </form>
 
     </main>
-    <script src="scripts/formVal.js"></script>
+    
     <script>
-        function register(event) {
+        function login(event) {
             event.preventDefault();
-            let formData = new FormData(document.getElementById("registerForm"));
+            let formData = new FormData(document.getElementById("loginForm"));
 
-            fetch("register.php", {
+            fetch("components/userlogin.php", {
                 method: "POST",
                 body: formData
             })
-            .then(response => response.text())
+            .then(response => response.json())
             .then(data => {
-                document.getElementById("message").innerText = data;
+                if (data.status === 'success') {
+                    window.location.href = "index.php";
+                }else{
+                    document.getElementById("message").innerText = data.message;
+                }
+            })
+            .catch(error => {
+                console.error('Error: ', error);
             });
         }
     </script>
