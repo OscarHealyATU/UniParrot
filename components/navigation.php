@@ -21,7 +21,7 @@
     <ul class="small-nav width-2">
        <?php
        if (isset($_SESSION['username'])) {
-        echo '<a href="logout.php"><li>Sign Out</li></a>';
+        echo '<a href="components/logout.php"><li>Sign Out</li></a>';
        } else {
         echo ' <a href="login.php"><li>Sign in</li></a>
         <a href="register.php"><li>Sign up</li></a>';

@@ -10,15 +10,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_SESSION["user_id"])) {
         $user_id = $_SESSION["user_id"];
     } else {
-        echo "Sign in or sign up to post!";
+        echo "Note: <a href='../login.php'><u><strong>Log in</strong></u></a> or <a href='../register.php'><strong><u>Register</strong></u></a> to post!";
         exit;
     }
     if (empty($postSubject)) {
-        echo "Create a Title for your Post";
+        echo "Note: Create a Title for your Post";
         exit;
     }
     if (empty($postSubject)) {
-        echo "Provide some context for your Post";
+        echo "Note: Provide some context for your Post";
         exit;
     }
 
@@ -27,7 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("iss", $user_id, $postSubject, $postBody);
 
     if ($stmt->execute()) {
-        echo "Successfully Posted!";
+        echo "Note: Successfully Posted!";
+        echo $conn->insert_id;
     } else {
         echo "Error: " . $stmt->error;
     }

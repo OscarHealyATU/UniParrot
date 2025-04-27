@@ -21,8 +21,8 @@
 
             <h1>Popular Posts</h1>
             <!-- Hard coded Article -->
-            <aside class="left-aside" id="postPrompt" onsubmit="makePost(event)">
-                <form method="post" id="makePost">
+            <aside class="left-aside" id="postPrompt">
+                <form method="post" id="makePost" onsubmit="makePost(event)">
                     <div class="dBox" class="caron" id="post-expand">
                         <div class="caron" onclick="expandMakePost()">
                             <h3>
@@ -38,9 +38,9 @@
                         <div id="make-post-container" class="make-post-container">
                             <label for="postSubject">Title</label>
                             <input type="text" name="postSubject" id="postSubject" placeholder="Subject">
-                            <label for="postSubject">Exposition</label>
+                            <label for="postBody">Exposition</label>
                             <textarea name="postBody" id="postBody" placeholder="Body"></textarea>
-                            <div id="message" class="abox">Message:</div>
+                            <div id="message" class="abox">Note: Extra info may appear here..</div>
                             <button type="submit">Post</button>
 
                         </div>
@@ -53,7 +53,13 @@
 
             <div id="feed-container-main">
                 <script src="scripts/feed.js"></script>
-                <script>
+                
+            </div>
+            <!-- article click more -->
+            <!-- <script src="scripts/function.js"></script> -->
+        </main>
+    </div>
+    <script>
                     function makePost(event) {
 
                         event.preventDefault();
@@ -68,17 +74,12 @@
                                 document.getElementById("message").innerHTML = data;
                                 // redirect after success message
                                 setTimeout(function() {
-                                    // window.location.href = 'siteRules.php';
+                                    window.location.href = 'post.php?id=' + postId;
                                 }, 2000);
                             });
 
                     }
                 </script>
-            </div>
-            <!-- article click more -->
-            <!-- <script src="scripts/function.js"></script> -->
-        </main>
-    </div>
     <?php include 'components/footer.php'; ?>
 </body>
 
