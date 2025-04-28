@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Note: Create a Title for your Post";
         exit;
     }
-    if (empty($postSubject)) {
+    if (empty($postBody)) {
         echo "Note: Provide some context for your Post";
         exit;
     }

@@ -22,7 +22,7 @@
             <h1>Popular Posts</h1>
             <!-- Hard coded Article -->
             <aside class="left-aside" id="postPrompt">
-                <form method="post" id="makePost" onsubmit="makePost(event)">
+                <form method="post" id="makePost" onsubmit="makePost(event)">';
                     <div class="dBox" class="caron" id="post-expand">
                         <div class="caron" onclick="expandMakePost()">
                             <h3>
@@ -65,23 +65,37 @@
             event.preventDefault();
             let formData = new FormData(document.getElementById("makePost"));
 
-            fetch("../components/createPost.php", {
+            fetch("components/createPost.php", {
                     method: "POST",
                     body: formData
                 })
                 .then(response => response.text())
-                .then(postId => {
-                    document.getElementById("message").innerHTML = "Note: Post successful!";
-                    // redirect after success message
-                    setTimeout(function() {
-                        window.location.href = 'post.php?postId=' + postId;
-                    }, 2000);
+                .then(data => {
+                    if (!isNaN(data)) {
+                        document.getElementById("message").innerHTML = "Note: Post successful!";
+                        setTimeout(function() {
+                            window.location.href = 'post.php?postId=' + data;
+                        }, 2000);
+                    } else {
+                        document.getElementById("message").innerHTML = data;
+                    }
                 }).catch(error => {
                     console.error('error: ', error);
                     document.getElementById("message").innerHTML = "Something went wrong!";
                 });
-
         }
+        // .then(postId => {
+        //     document.getElementById("message").innerHTML = "Note: Post successful!";
+        //     // redirect after success message
+        //     setTimeout(function() {
+        //         window.location.href = 'post.php?postId=' + postId;
+        //     }, 2000);
+        // }).catch(error => {
+        //     console.error('error: ', error);
+        //     document.getElementById("message").innerHTML = "Something went wrong!";
+        // });
+
+        // }
     </script>
     <?php include 'components/footer.php'; ?>
 </body>
