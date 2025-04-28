@@ -27,8 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("iss", $user_id, $postSubject, $postBody);
 
     if ($stmt->execute()) {
-        echo "Note: Successfully Posted!";
-        echo $conn->insert_id;
+        echo $conn->insert_id;        
     } else {
         echo "Error: " . $stmt->error;
     }

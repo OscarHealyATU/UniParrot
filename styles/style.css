@@ -292,6 +292,22 @@ footer a:visited {
     margin: var(--outer-radius) 0;
     margin-left: calc(var(--inner-radius)*-1);
 }
+.engageBox,.shareButton,.like,.dislike{
+    font-size: smaller;
+    margin: 10px;
+    padding: 5px;
+    background-color: var(--l-grey);
+    border: solid 2px var(--ll-grey);
+    border-radius: 15px;
+    
+}
+.engageBox{
+    border-radius: 25px;
+    padding: 0;
+    margin: 10px auto;
+    
+    display: flex;
+}
 
 input[type=text],
 textarea {

@@ -53,33 +53,36 @@
 
             <div id="feed-container-main">
                 <script src="scripts/feed.js"></script>
-                
+
             </div>
             <!-- article click more -->
             <!-- <script src="scripts/function.js"></script> -->
         </main>
     </div>
     <script>
-                    function makePost(event) {
+        function makePost(event) {
 
-                        event.preventDefault();
-                        let formData = new FormData(document.getElementById("makePost"));
+            event.preventDefault();
+            let formData = new FormData(document.getElementById("makePost"));
 
-                        fetch("../components/createPost.php", {
-                                method: "POST",
-                                body: formData
-                            })
-                            .then(response => response.text())
-                            .then(data => {
-                                document.getElementById("message").innerHTML = data;
-                                // redirect after success message
-                                setTimeout(function() {
-                                    window.location.href = 'post.php?id=' + postId;
-                                }, 2000);
-                            });
+            fetch("../components/createPost.php", {
+                    method: "POST",
+                    body: formData
+                })
+                .then(response => response.text())
+                .then(postId => {
+                    document.getElementById("message").innerHTML = "Note: Post successful!";
+                    // redirect after success message
+                    setTimeout(function() {
+                        window.location.href = 'post.php?postId=' + postId;
+                    }, 2000);
+                }).catch(error => {
+                    console.error('error: ', error);
+                    document.getElementById("message").innerHTML = "Something went wrong!";
+                });
 
-                    }
-                </script>
+        }
+    </script>
     <?php include 'components/footer.php'; ?>
 </body>
 
