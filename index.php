@@ -22,7 +22,7 @@
             <h1>Popular Posts</h1>
             <!-- Hard coded Article -->
             <aside class="left-aside" id="postPrompt">
-                <form method="post" id="makePost" onsubmit="makePost(event)">';
+                <form method="post" id="makePost" onsubmit="makePost(event)">
                     <div class="dBox" class="caron" id="post-expand">
                         <div class="caron" onclick="expandMakePost()">
                             <h3>
