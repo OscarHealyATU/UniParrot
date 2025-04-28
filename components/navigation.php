@@ -2,7 +2,7 @@
 <?php include 'connectToDB.php'; ?>
 <nav class="nav1">
     <a href="">
-        <img src="assets/UI/nav.png" alt="">
+        <img src="assets/UI/nav.gif" alt="">
     </a>
     <ul class="width-3">
         <a href="index.php"><li>Posts</li></a>
