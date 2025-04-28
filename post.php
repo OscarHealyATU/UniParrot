@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uni Parrot | Post</title>
     <link rel="icon" type="image/x-icon" href="assets/UI/favicon.png">
-    <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
     <link rel="stylesheet" href="styles/navigationStyle.css">
-    <link rel="stylesheet" href="styles/feedStyle.css">
+    <!-- <link rel="stylesheet" href="styles/feedStyle.css"> -->
 
 
 </head>
@@ -72,12 +72,17 @@
 
             </div>
         </form>
+        <div id="commentContainer" class="form-bit dBox">
+
+        </div>
         <script>
-            const CONST_POST_ID = <?php echo $postId ?>;
+            const CONST_POST_ID = <?php echo $postId; ?>;
+            window.onload = loadComments;
 
             function makeComment(event) {
                 event.preventDefault();
                 let formData = new FormData(document.getElementById("makeComment"));
+
                 fetch("components/createComment.php", {
                         method: "POST",
                         body: formData
@@ -85,20 +90,29 @@
                     .then(response => response.text())
                     .then(data => {
                         if (!isNaN(data)) {
-                            document.getElementById("message").innerHTML = "Note: Post successful!";
+                            document.getElementById("message").innerHTML = "Note: Posted Comment!";
+                            /////////////// added this 
+                            document.getElementById("makeComment").reset();
+                            loadComments();
+                            ////////////////
+                            /*
                             setTimeout(function() {
                                 window.location.href = 'post.php?postId=' + data;
                             }, 2000);
                         } else {
                             document.getElementById("message").innerHTML = data;
-                        }
+                        */}
                     }).catch(error => {
                         console.error('error: ', error);
                         document.getElementById("message").innerHTML = "Something went wrong!";
                     });
+            }
 
-
-
+            function loadComments(){
+                fetch(`components/fetchComments.php?postId=${CONST_POST_ID}`)
+                .then(response => response.text())
+                .then(html => { document.getElementById("commentsContainer").innerHTML = html;})
+                .catch(error=>("error loading comments: ",error));
             }
 
 
