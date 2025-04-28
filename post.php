@@ -16,7 +16,7 @@
 
 <body>
     <?php include 'components/navigation.php'; ?>
-    <main class="main abox" id="postPrompt" onsubmit="makePost(event)">
+    <main class="main abox" id="postPrompt">
         <?php
 
         if (isset($_GET["postId"])) {
@@ -58,17 +58,50 @@
         <div class="form-bit dBox">
 
 
-            <!-- body -->
+            <!-- post body / content -->
             <p><b><?php echo $body; ?></b></p>
 
         </div>
+        <!-- comment -->
+        <form method="post" id="makeComment" onsubmit="makeComment(event)">
+            <div class="form-bit dBox">
+                <input type="hidden" class="cBox" name="post_id" id="post_id" value="<?php echo $postId; ?>">
+                <input type="text" class="cBox" name="commentText" id="commentText" placeholder="comment">
+                <button class="comment" type="submit">comment</button>
+                <div id="message" class="abox">Note: Extra info may appear here..</div>
 
-        <div class="form-bit dBox">
-            <input type="text" value="comment" class="cBox">
-            <button class="comment">comment</button>
-        </div>
-
+            </div>
+        </form>
         <script>
+            const CONST_POST_ID = <?php echo $postId ?>;
+
+            function makeComment(event) {
+                event.preventDefault();
+                let formData = new FormData(document.getElementById("makeComment"));
+                fetch("components/createComment.php", {
+                        method: "POST",
+                        body: formData
+                    })
+                    .then(response => response.text())
+                    .then(data => {
+                        if (!isNaN(data)) {
+                            document.getElementById("message").innerHTML = "Note: Post successful!";
+                            setTimeout(function() {
+                                window.location.href = 'post.php?postId=' + data;
+                            }, 2000);
+                        } else {
+                            document.getElementById("message").innerHTML = data;
+                        }
+                    }).catch(error => {
+                        console.error('error: ', error);
+                        document.getElementById("message").innerHTML = "Something went wrong!";
+                    });
+
+
+
+            }
+
+
             function sharePost() {
                 const url = window.location.href;
                 navigator.clipboard.write(url).then(() => {
@@ -80,7 +113,7 @@
             }
 
             function countShares() {
-                const = <?php echo $postId ?>;
+
                 fetch('likePost.php', {
                     method: 'Post',
                     headers: {
@@ -92,7 +125,7 @@
 
 
             function likePost() {
-                const = <?php echo $postId ?>;
+
                 fetch('likePost.php', {
                     method: 'Post',
                     headers: {
@@ -103,7 +136,7 @@
             }
 
             function dislikePost() {
-                const = <?php echo $postId ?>;
+
                 fetch('likePost.php', {
                     method: 'Post',
                     headers: {
