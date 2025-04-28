@@ -14,7 +14,12 @@
 </head>
 
 <body>
-    <?php include 'components/navigation.php'; ?>
+    <?php include 'components/navigation.php';
+    $stmt = $conn->prepare("select post_id, user_id, subject, content from posts order by created_at desc limit 20");
+    $stmt->execute();
+    $stmt->bind_result($post_id, $user_id, $subject, $content);
+    ?>
+
     <div class="content">
 
         <main class="main abox">
@@ -52,8 +57,31 @@
             </a>
 
             <div id="feed-container-main">
-                <script src="scripts/feed.js"></script>
-
+                <!-- fake script for prototype -->
+                <!-- <script src="scripts/feed.js"></script> -->
+                <!-- real php script -->
+                <?php
+                while ($stmt->fetch()) {
+                   echo "
+                   <article class='bBox'>
+                        <div>
+                            <img src='assets/UI/noProfile.png' alt='profile_000{$user_id}'>
+                            <strong>User #{$user_id}</strong>
+                        </div>  
+                        <div>
+                            <h3>{$subject}</h3> 
+                            <p>" . substr($content, 0, 300) . "...</p> 
+                            <span class='read-more'>click to read more...</span>
+                            <form method='get' action='post.php'>
+                                <input type='hidden' name='postId' value='{$post_id}'>
+                                <button class='comment' type='submit'>View Post</button>       
+                            </form>
+                        </div>
+                    </article>
+                   ";
+                }
+               
+                    ?>
             </div>
             <!-- article click more -->
             <!-- <script src="scripts/function.js"></script> -->

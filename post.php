@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uni Parrot | Post</title>
     <link rel="icon" type="image/x-icon" href="assets/UI/favicon.png">
-    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/navigationStyle.css">
-    <!-- <link rel="stylesheet" href="styles/feedStyle.css"> -->
+    <link rel="stylesheet" href="styles/feedStyle.css">
 
 
 </head>
@@ -72,7 +72,7 @@
 
             </div>
         </form>
-        <div id="commentContainer" class="form-bit dBox">
+        <div id="commentsContainer" class="form-bit dBox">
 
         </div>
         <script>

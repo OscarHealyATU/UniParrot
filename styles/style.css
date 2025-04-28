@@ -32,13 +32,17 @@
     padding: 0;
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 500;
+    
 }
 
 html {
     accent-color: var(--l-red);
     caret-color: var(--l-grey);
+    cursor: url('../assets/UI/cursor.png') 64 12, auto;
 }
-
+button, a {
+    cursor: url('../assets/UI/cursorbtn.png') 64 12, pointer;
+}
 .Atu-theme {
     /* color scheme */
     --grey: #014941;
@@ -53,7 +57,7 @@ html {
 
 body {
     margin: 0;
-    cursor: url('../assets/cursor.png') 64 12, auto;
+    
     /* height: 100dvh; */
 
     background-color: var(--l-grey);
@@ -291,6 +295,7 @@ footer a:visited {
 .flex-column button{
     margin: var(--outer-radius) 0;
     margin-left: calc(var(--inner-radius)*-1);
+    
 }
 .engageBox,.shareButton,.like,.dislike{
     font-size: smaller;
