@@ -10,18 +10,25 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/navigationStyle.css">
     <link rel="stylesheet" href="styles/feedStyle.css">
+    <link rel="stylesheet" href="styles/photoStyle.css">
 
 </head>
-
+ 
 <body>
     <?php include 'components/navigation.php';
+    
     $stmt = $conn->prepare("select post_id, user_id, subject, content from posts order by created_at desc limit 20");
     $stmt->execute();
     $stmt->bind_result($post_id, $user_id, $subject, $content);
     ?>
 
     <div class="content">
-
+    
+    <div class="photo-sidebar abox height-2">
+            <img src="assets/atu_photos/atu_photos-2">
+            <img src="assets/atu_photos/atu_photos-25">
+            <img src="assets/atu_photos/atu_photos-12">
+        </div>
         <main class="main abox">
 
             <h1>Popular Posts</h1>
@@ -87,6 +94,7 @@
             <!-- <script src="scripts/function.js"></script> -->
         </main>
     </div>
+   
     <script>
         function makePost(event) {
 

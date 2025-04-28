@@ -17,7 +17,7 @@
 <body>
     <?php include 'components/navigation.php'; ?>
     <main class="main abox">
-        <form method="POST" action="" class="width-5 height-3" id="loginForm" onsubmit="login(event)">
+        <form method="POST" action="" id="loginForm" onsubmit="login(event)">
             <div class="form-header">
                 <h1>Sign In</h1>
                 <a href="register.php">

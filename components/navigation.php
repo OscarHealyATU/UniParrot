@@ -16,7 +16,6 @@
        ?>
         <a href="siteRules.php"><li>Rules</li></a>
         <a href="aboutUs.php"><li>About</li></a>
-        <a href="contact.php"><li>Contact</li></a>
     </ul>
     <ul class="small-nav width-2">
        <?php

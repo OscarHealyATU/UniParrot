@@ -18,7 +18,7 @@
 
     <main class="main abox">
 
-        <form method="POST" class="width-5 height-3" id="registerForm" onsubmit="register(event)">
+        <form method="POST" id="registerForm" onsubmit="register(event)">
             <div class="form-header">
                 <h1>Sign Up</h1>
                 <a href="login.php">

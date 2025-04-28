@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Main content section */
+.main-content {
+    flex: 1;
+    max-width: 70%;
+}
+
+/* Sidebar for the images */
+.photo-sidebar {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+/* Style for images in the sidebar */
+.photo-sidebar img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #000;
+    object-fit: cover;
+}
+
+/* Add some margin between the main content and sidebar */
+.container > * {
+    margin-right: 20px;
+}

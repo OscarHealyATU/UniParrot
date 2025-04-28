@@ -14,8 +14,8 @@
 
 <body>
     <?php include 'components/navigation.php'; ?>
-    <main class="main">
-    <div class="abox">
+    <main class="main abox">
+    <div>
         <form action="">
             <h1>Profile Page</h1>
             <div class="profile-header dBox">
@@ -32,7 +32,7 @@
 
             <div class="profile-main dBox">
                 <label for="username">User name</label>
-                <input type="text" name="username" id="username" value="[lazy_cat25]" disabled>
+                <input type="text" name="username" id="username" value="[inferior-Stick]" disabled>
                 <label for="name">First Name</label>
                 <input type="text" name="fname" id="fname" value="[Oscar]" disabled>
                 <label for="lname">Last Name</label>
