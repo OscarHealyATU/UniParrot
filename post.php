@@ -68,10 +68,6 @@
             <button class="comment">comment</button>
         </div>
 
-
-
-
-
         <script>
             function sharePost() {
                 const url = window.location.href;
@@ -82,6 +78,7 @@
                     console.error("error copying link: " + error);
                 });
             }
+
             function countShares() {
                 const = <?php echo $postId ?>;
                 fetch('likePost.php', {
@@ -115,7 +112,6 @@
                     body: 'postId=' + postId + '&action=dislike'
                 });
             }
-           
         </script>
 
 
