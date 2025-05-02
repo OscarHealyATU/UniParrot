@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/formStyle.css">
 
 </head>
-
+ 
 <body>
     <?php include 'components/navigation.php'; ?>
     <main class="main abox">
@@ -56,7 +56,7 @@
                     document.getElementById("message").innerText = data.message;
                      // redirect after success message
                      setTimeout(function() {
-                        window.location.href = 'index.php';
+                        document.location.href = 'index.php';
                     }, 2000);
                 }else{
                     document.getElementById("message").innerText = data.message;

@@ -23,7 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (password_verify($password, $row["hashed_password"])) {
             $_SESSION["username"] = $username;
-            $_SESSION["user_id"] = $row["user_id"];
+            $_SESSION["user_id"] = $row["user_id"]; 
+            // response is undefined, set = to success
             $response['status'] = 'success';
             $response['message'] = 'success';
         } else {
