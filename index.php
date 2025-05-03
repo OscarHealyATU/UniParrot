@@ -25,9 +25,9 @@
     <div class="content">
     
     <div class="photo-sidebar abox height-2">
-            <img src="assets/atuPhotos/atuPhotos2.jpg">
-            <img src="assets/atu_photos/atu_photos-25.jpg">
-            <img src="assets/atu_photos/atu_photos-12.jpg">
+            <img src="/assets/atuPhotos/atuPhotos2.jpg">
+            <img src="/assets/atuPhotos/atuPhotos25.jpg">
+            <img src="/assets/atuPhotos/atuPhotos12.jpg">
         </div>
         <main class="main abox">
 

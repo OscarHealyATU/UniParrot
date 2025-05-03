@@ -1,4 +1,5 @@
 const postPrompt = document.getElementById("postPrompt");
+
 if (postPrompt) {
 
     const offset = postPrompt.offsetTop;
@@ -20,4 +21,9 @@ function expandMakePost() {
 }
 document.getElementById("theme-toggle").addEventListener("click", function () {
     document.documentElement.classList.toggle("Atu-theme");
+    if (document.documentElement.classList.contains("Atu-theme")) {
+        localStorage.setItem("theme", "Atu-theme");
+    } else {
+        localStorage.removeItem("theme");
+    }
 });

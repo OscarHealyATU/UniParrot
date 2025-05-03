@@ -56,10 +56,11 @@
                 <strong>user: <?php echo $user_id; ?></strong>
                 <br> posted at: <br><?php echo $postAge; ?>
             </p>
+            <hr>
             <!-- share button -->
             <div class="engageBox">
 
-                <button class="like" onclick="likePost()"><?php echo $likes; ?> likes</button>
+                <button class="like" onclick="likePost()"><?php echo $likes; ?>Likes</button>
                 <button class="dislike" onclick="dislikePost()"><?php echo $dislikes; ?> dislikes</button>
                 <button class="shareButton" onclick="sharePost()"><?php echo $shares; ?> Share</button>
             </div>
@@ -106,14 +107,9 @@
                             /////////////// added this 
                             document.getElementById("makeComment").reset();
                             loadComments();
-                            ////////////////
-                            /*
-                            setTimeout(function() {
-                                window.location.href = 'post.php?postId=' + data;
-                            }, 2000);
-                        } else {
-                            document.getElementById("message").innerHTML = data;
-                        */
+                          
+                        }else{
+                            document.getElementById("message").innerHTML ="Note: <a href='../login.php'><u><strong>Log in</strong></u></a> or <a href='../register.php'><strong><u>Register</strong></u></a> to post!";
                         }
                     }).catch(error => {
                         console.error('error: ', error);

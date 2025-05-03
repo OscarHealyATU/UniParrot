@@ -1,5 +1,10 @@
 <?php session_start();?>
 <?php include 'connectToDB.php'; ?>
+<script>
+    if (localStorage.getItem("theme") === "Atu-theme") {
+    document.documentElement.classList.add("Atu-theme");
+}   
+</script>
 <nav class="nav1">
     <a href="">
         <img src="assets/UI/nav.gif" alt="">
